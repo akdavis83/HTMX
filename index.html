@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multipage HTMX Site</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/htmx.org@1.8.0"></script>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="home.html" hx-get="home.html" hx-target="#content" hx-trigger="click">Home</a>
+        <a href="about.html" hx-get="about.html" hx-target="#content" hx-trigger="click">About</a>
+        <a href="contact.html" hx-get="contact.html" hx-target="#content" hx-trigger="click">Contact</a>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="content" hx-get="home.html" hx-trigger="load">
+        <!-- Default content will load here -->
+    </main>
+
+</body>
+</html>
